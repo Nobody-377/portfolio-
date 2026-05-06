@@ -55,6 +55,18 @@ body {
   color: #F9B530;
 }
 
+.nav--light .nav-cta,
+.nav--light .nav-download-btn {
+  background: #344C36 !important;
+  color: #fff !important;
+}
+
+.nav--light .nav-cta:hover,
+.nav--light .nav-download-btn:hover {
+  background: #e05a3a !important;
+  color: #fff !important;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -101,6 +113,23 @@ body {
 }
 
 .nav-cta:hover {
+  background: #fff !important;
+  color: #F9B530 !important;
+}
+
+.nav-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  background: #F9B530 !important;
+  color: #fff !important;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-download-btn:hover {
   background: #fff !important;
   color: #F9B530 !important;
 }
