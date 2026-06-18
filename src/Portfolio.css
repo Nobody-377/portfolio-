@@ -144,20 +144,9 @@ body {
   overflow: visible;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: #000;
-  z-index: 1;
-}
-
 .hero-amber-block {
   position: absolute;
-  top: 140px;
+  top: 170px;
   left: 40px;
   z-index: 4;
   width: 340px;
@@ -169,7 +158,7 @@ body {
   position: absolute;
   top: 56px;
   left: 100px;
-  bottom: 80px;
+  bottom: 25px;
   display: flex;
   flex-direction: column;
   width: 340px;
@@ -179,7 +168,9 @@ body {
   position: relative;
   flex: 1;
   overflow: hidden;
-  z-index: 5;
+  z-index: 7;
+  transform: scale(0.92);
+  transform-origin: bottom left;
 }
 
 .hero-img {
@@ -199,9 +190,9 @@ body {
   background: #000;
   position: relative;
   z-index: 6;
-  margin-top: -60px;
+  margin-top: -30px;
   margin-left: -60px;
-  width: 380px;
+  width: 340px;
 }
 
 .hero-right {
@@ -250,8 +241,8 @@ body {
 
 .sparkles {
   position: absolute;
-  top: -55px;
-  left: -200px;
+  top: -25px;
+  left: -230px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -274,8 +265,8 @@ body {
 
 .sp-corner {
   position: absolute;
-  bottom: 130px;
-  right: 0px;
+  bottom: 15px;
+  right: 15px;
   font-size: 45px;
   color: #F9B530;
   z-index: 5;

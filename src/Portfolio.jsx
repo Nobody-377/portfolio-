@@ -57,6 +57,8 @@ function Navbar() {
 }
 
 function Hero() {
+
+
   return (
     <section className="hero">
 
@@ -65,13 +67,13 @@ function Hero() {
       <div className="hero-left">
         <div className="hero-photo-area">
           <img src={PROFILE_IMG} alt="Profile" className="hero-img" />
+          <span className="sp-corner">✦</span>
         </div>
         <div className="hero-tagline">
           I love crafting seamless frontend experiences, working with backend
           systems, and exploring data. I approach problems in a rational, pragmatic way
           and build clean, functional solutions.
         </div>
-        <span className="sp-corner">✦</span>
       </div>
 
       <div className="hero-right">
@@ -182,7 +184,7 @@ function Resume() {
           <div className="exp-row">
             <div className="exp-yr">✦</div>
             <div>
-              <div className="exp-role">Frontend Developer (Self Projects)</div>
+              <div className="exp-role">Frontend Developer</div>
               <div className="exp-sub">Built responsive web applications using React, JSX, and CSS</div>
               <div className="exp-sub">Created portfolio projects and UI clones to improve development skills</div>
             </div>
@@ -191,20 +193,20 @@ function Resume() {
           <div className="exp-row">
             <div className="exp-yr">✦</div>
             <div>
-              <div className="exp-role">React Developer (Learning)</div>
+              <div className="exp-role">React Developer</div>
               <div className="exp-sub">Worked with props, state, and component-based architecture</div>
               <div className="exp-sub">Developed interactive components and improved UI/UX practices</div>
             </div>
           </div>
 
           <div className="exp-row">
-            <div className="exp-yr">✦</div>
-            <div>
-              <div className="exp-role">Web Development Beginner</div>
-              <div className="exp-sub">Learned HTML, CSS, and JavaScript fundamentals</div>
-              <div className="exp-sub">Built basic websites and explored modern web development</div>
+    <div className="exp-yr">✦</div>
+               <div>
+              <div className="exp-role">Mobile Application Developer</div>
+              <div className="exp-sub">Developed MajdoorHub using React Native and Expo</div>
+              <div className="exp-sub">Implemented profile-based discovery and service matching</div>
             </div>
-          </div>
+            </div>
 
           <div className="tag-row">
             <span className="tag">#Creativity</span>
@@ -233,12 +235,11 @@ function Resume() {
             </div>
           </div>
           <div>
-            <div className="skills-subhead">Web Development</div>
+            <div className="skills-subhead">Knowledge of:</div>
             <div className="web-dev-text">
-              Knowledge of:<br />
-              HTML &nbsp;&nbsp; Python<br />
-              CSS &nbsp;&nbsp;&nbsp;&nbsp; SQL<br />
-              JavaScript &nbsp; DBMS
+              HTML/CSS &nbsp; &nbsp; React&nbsp;&nbsp; Python<br />
+              React Native&nbsp;&nbsp; DSA&nbsp;&nbsp; C++&nbsp;&nbsp; Next.js<br/> 
+              MySQL &nbsp; &nbsp;JavaScript &nbsp;&nbsp; DBMS
             </div>
           </div>
         </div>
@@ -277,13 +278,13 @@ function Bottom() {
     <section className="bottom" id="work">
 
       <div>
-        <h2 className="bt-title">Activities</h2>
+        <h2 className="bt-title">Projects</h2>
 
         <div className="act-row">
-          <div className="act-yr">2025</div>
+          <div className="act-yr">2026</div>
           <div>
-            <div className="act-name">On-job-training</div>
-            <div className="act-desc">A fully functional logistics platform that also has its own backend</div>
+            <div className="act-name">LogiTrack</div>
+            <div className="act-desc">A logistics management and shipment tracking web application built with HTML, CSS, and JavaScript, enabling users to monitor deliveries, track shipment status in real time, and manage transportation data through an interactive dashboard.</div>
           </div>
         </div>
 
@@ -291,7 +292,15 @@ function Bottom() {
           <div className="act-yr">2026</div>
           <div>
             <div className="act-name">Tic-Tac-Toe</div>
-            <div className="act-desc">A tic-tac-toe website with animated background</div>
+            <div className="act-desc">An interactive web-based game featuring multiplayer modes and a dynamic, custom-animated background. Crafted with Next.js and CSS for smooth state transitions and responsive gameplay.</div>
+          </div>
+        </div>
+
+        <div className="act-row">
+          <div className="act-yr">2026</div>
+          <div>
+            <div className="act-name">MajdoorHub</div>
+            <div className="act-desc">An on-demand service booking mobile application built with React Native (Expo), allowing users to hire verified daily-wage laborers (plumbers, electricians, painters) with location-based mapping.</div>
           </div>
         </div>
 
