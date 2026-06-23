@@ -915,16 +915,15 @@ body {
   }
 
   .about-photo-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    position: relative;
+    display: block;
+    width: 240px;
+    margin: 0 auto;
   }
 
   .about-photo-frame {
     left: 0;
     width: 100%;
-    max-width: 240px;
   }
 
   .about-photo-frame img {
@@ -934,23 +933,22 @@ body {
   .contact-card {
     left: 0;
     width: 100%;
-    max-width: 240px;
-    margin-top: 15px;
+    margin-top: 0;
     box-sizing: border-box;
   }
 
   .badge-dob {
-    left: 50%;
-    transform: translateX(-50%);
-    top: -15px;
+    left: -10px;
+    top: 24px;
+    transform: none;
   }
 
   .badge-nat {
-    left: 50%;
-    transform: translateX(-50%);
+    right: 15px;
+    top: 300px;
+    left: auto;
     bottom: auto;
-    top: 290px;
-    right: auto;
+    transform: translateY(-50%);
   }
 
   .resume-bg-text {
