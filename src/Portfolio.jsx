@@ -281,7 +281,7 @@ function Bottom() {
         <h2 className="bt-title">Projects</h2>
 
         <div className="act-row">
-          <div className="act-yr">2026</div>
+          <div className="act-yr">2025</div>
           <div>
             <div className="act-name">LogiTrack</div>
             <div className="act-desc">A logistics management and shipment tracking web application built with HTML, CSS, and JavaScript, enabling users to monitor deliveries, track shipment status in real time, and manage transportation data through an interactive dashboard.</div>
