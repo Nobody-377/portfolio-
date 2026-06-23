@@ -697,7 +697,7 @@ body {
 
 .act-row {
   display: grid;
-  grid-template-columns: 44px 1fr;
+  grid-template-columns: 75px 1fr;
   align-items: start;
   gap: 8px;
   margin-bottom: 20px;
