@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Portfolio.css";
-import PROFILE_IMG from "./assets/lyta.jpg";
+import PROFILE_IMG from "./assets/My_image.jpeg";
 
 const StarIcon = () => (
   <svg viewBox="0 0 12 12">
