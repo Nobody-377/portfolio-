@@ -14,15 +14,25 @@ function Navbar() {
 
   useEffect(() => {
     const onScroll = () => {
-      const aboutSection = document.getElementById("about");
       const heroEnd = window.innerHeight - 60;
+
+      const aboutSection = document.getElementById("about");
       const aboutEnd = aboutSection
         ? aboutSection.offsetTop + aboutSection.offsetHeight - 60
         : heroEnd * 2;
 
-      if (window.scrollY > aboutEnd) {
+      const resumeSection = document.getElementById("resume");
+      const resumeEnd = resumeSection
+        ? resumeSection.offsetTop + resumeSection.offsetHeight - 60
+        : aboutEnd * 2;
+
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > resumeEnd) {
+        setNavState("light");
+      } else if (currentScroll > aboutEnd) {
         setNavState("dark");
-      } else if (window.scrollY > heroEnd) {
+      } else if (currentScroll > heroEnd) {
         setNavState("light");
       } else {
         setNavState("dark");
