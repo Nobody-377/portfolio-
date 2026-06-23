@@ -10,6 +10,7 @@ const StarIcon = () => (
 
 function Navbar() {
   const [navState, setNavState] = useState("dark");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -32,17 +33,22 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={navState === "light" ? "nav nav--light" : "nav"}>
-      <a href="#" className="nav-logo">
+    <nav className={(navState === "light" ? "nav nav--light" : "nav") + (menuOpen ? " nav--open" : "")}>
+      <a href="#" className="nav-logo" onClick={() => setMenuOpen(false)}>
         <StarIcon />
         Nandini Patel
       </a>
-      <ul className="nav-links">
-        <li><a href="#about">About me</a></li>
-        <li><a href="#work">Work</a></li>
+      <button className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+        <span className="nav-toggle-bar"></span>
+        <span className="nav-toggle-bar"></span>
+        <span className="nav-toggle-bar"></span>
+      </button>
+      <ul className={menuOpen ? "nav-links nav-links--open" : "nav-links"}>
+        <li><a href="#about" onClick={() => setMenuOpen(false)}>About me</a></li>
+        <li><a href="#work" onClick={() => setMenuOpen(false)}>Work</a></li>
         <li>
-          <a href="/resume.pdf" download="Nandini_Patel_Resume.pdf" className="nav-download-btn">
-            {/* <span>Download Resume</span> */}
+          <a href="/resume.pdf" download="Nandini_Patel_Resume.pdf" className="nav-download-btn" onClick={() => setMenuOpen(false)}>
+            <span className="nav-download-txt">Download Resume</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
@@ -50,7 +56,7 @@ function Navbar() {
             </svg>
           </a>
         </li>
-        <li><a href="#contact" className="nav-cta">Get in touch!</a></li>
+        <li><a href="#contact" className="nav-cta" onClick={() => setMenuOpen(false)}>Get in touch!</a></li>
       </ul>
     </nav>
   );
