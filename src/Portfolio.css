@@ -944,8 +944,8 @@ body {
   }
 
   .badge-nat {
-    right: 15px;
-    top: 300px;
+    right: -14px;
+    top: 268px;
     left: auto;
     bottom: auto;
     transform: translateY(-50%);
