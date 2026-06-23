@@ -86,11 +86,6 @@ function Hero() {
 
       <div className="hero-right">
         <div className="portfolio-title">
-          <div className="sparkles">
-            <span className="sp">✦</span>
-            {/* <span className="sp sm">✦</span> */}
-            <span className="sp xs">✦</span>
-          </div>
           <span className="pt-solid">PORTFOLIO</span>
           <span className="pt-outline">PORTFOLIO</span>
           <span className="pt-outline">PORTFOLIO</span>
