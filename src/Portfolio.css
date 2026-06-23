@@ -272,6 +272,21 @@ body {
   z-index: 5;
 }
 
+.sp-top-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 35px;
+  color: #F9B530;
+  z-index: 5;
+}
+
+.sp-top-left-2 {
+  top: 40px;
+  left: 40px;
+  font-size: 20px;
+}
+
 .hero-socials {
   display: flex;
   flex-direction: column;

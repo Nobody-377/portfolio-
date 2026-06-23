@@ -73,6 +73,8 @@ function Hero() {
       <div className="hero-left">
         <div className="hero-photo-area">
           <img src={PROFILE_IMG} alt="Profile" className="hero-img" />
+          <span className="sp-top-left">✦</span>
+          <span className="sp-top-left sp-top-left-2">✦</span>
           <span className="sp-corner">✦</span>
         </div>
         <div className="hero-tagline">
